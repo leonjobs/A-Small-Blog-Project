@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+    <title> Consumer Survey </title>
+</head>
+<body>
+    <form 
+    action = "../cgi-bin/MySurveyCollect.pl" 
+    method = "post">
+    <h2> Welcome to the Consumer Survey </h2>
+    <p />
+    <h4> Your Name: </h4>
+    <p>
+        <input type="text" name="thename" /><br />
+    </p>
+    <h4> Your Email Address: </h4>
+    <p>
+        <input type="text" name="email" /><br />
+    </p>
+    <h4> Your Age Category: </h4>
+    <p>
+        <input type = "radio"  name = "age"  value = "10-25"  
+        checked = "checked" /> 10-25 <br />
+        <input type = "radio"  name = "age"  value = "26-40" /> 
+        26-40 <br />
+        <input type = "radio"  name = "age"  value = "41-60" /> 
+        41-60 <br />
+        <input type = "radio"  name = "age"  value = "over60" /> 
+        Over 60 <br /> <br />
+    </p>
+    <h4> Your Gender: </h4>
+    <p>
+        <input type = "radio"  name = "gender"  value = "female"  
+        checked = "checked" /> Female <br />
+        <input type = "radio"  name = "gender"  value = "male" /> 
+        Male <br /> <br />
+    </p>
+    <p>
+        <input type = "submit"  value = "Submit Order" />
+        <input type = "reset"  value = "Reset Order" />
+    </p>
+</form>
+
+<hr />
+<h3>
+    If you want, you can see the 
+    <a href = 
+    "../cgi-bin/MySurveyShow.pl"> 
+    Result 
+</a>
+</h3>
+</body>
+</html>
+
